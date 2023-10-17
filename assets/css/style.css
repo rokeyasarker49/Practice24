@@ -1,0 +1,4833 @@
+/* Custom Font */
+@font-face {
+  font-family: 'Metropolis Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Metropolis Regular'), url('../font/Metropolis-Regular.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Metropolis Regular Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Metropolis Regular Italic'), url('../font/Metropolis-RegularItalic.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Metropolis Extra Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Metropolis Extra Light'), url('../font/Metropolis-ExtraLight.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Metropolis Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Metropolis Light'), url('../font/Metropolis-Light.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Metropolis Thin';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Metropolis Thin'), url('../font/Metropolis-Thin.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Metropolis Extra Light Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Metropolis Extra Light Italic'), url('../font/Metropolis-ExtraLightItalic.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Metropolis Light Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Metropolis Light Italic'), url('../font/Metropolis-LightItalic.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Metropolis Thin Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Metropolis Thin Italic'), url('../font/Metropolis-ThinItalic.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Metropolis Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Metropolis Medium'), url('../font/Metropolis-Medium.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Metropolis Semi Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Metropolis Semi Bold'), url('../font/Metropolis-SemiBold.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Metropolis Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Metropolis Bold'), url('../font/Metropolis-Bold.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Metropolis Bold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Metropolis Bold Italic'), url('../font/Metropolis-BoldItalic.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Metropolis Medium Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Metropolis Medium Italic'), url('../font/Metropolis-MediumItalic.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Metropolis Semi Bold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Metropolis Semi Bold Italic'), url('../font/Metropolis-SemiBoldItalic.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Metropolis Extra Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Metropolis Extra Bold'), url('../font/Metropolis-ExtraBold.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Metropolis Extra Bold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Metropolis Extra Bold Italic'), url('../font/Metropolis-ExtraBoldItalic.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Metropolis Black';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Metropolis Black'), url('../font/Metropolis-Black.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Metropolis Black Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Metropolis Black Italic'), url('../font/Metropolis-BlackItalic.woff') format('woff');
+  }
+
+:root {
+  /* Color */
+  --primary-main: #079d49;
+  --primary-light: #b5e2c8;
+  --primary-lightest: #e6f5ed;
+  --primary-dark: #108845;
+  --primary-gradient: linear-gradient(180deg, #318f72 0%, #36ae89 100%);
+  --secondary-main: #f88922;
+  --grays-dark-text: #333;
+  --grays-gray-secondary-text: #b7b7b7;
+  --grays-divider: #dadada;
+
+  /* Font Family */
+  --heading-font: "Libre Franklin";
+  --body-font: "Metropolis";
+
+  /* Font Size */
+  --heading-one: 48px;
+  --heading-two: 36px;
+  --heading-three: 28px;
+  --heading-four: 24px;
+  --heading-five: 18px;
+  --heading-six: 16px;
+  --body-large: 18px;
+  --body-small: 18px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Mini Nav */
+.mini-nav {
+  background: var(--primary-main, #079d49);
+}
+.mini-nav ul {
+  margin-bottom: 0;
+}
+.mini-nav .container ul {
+  padding: 6px;
+}
+.mini-nav .container ul li a {
+  color: #fff !important;
+  font-family: ""Work Sans"";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 150% */
+  margin-left: 30px;
+}
+.mini-nav .container ul li:first-child a {
+  margin-left: 0;
+}
+
+/* Main Nav Book */
+.main-nav-main-container-book{
+  border-bottom: 1px solid #DADADA; 
+}
+
+/* Main Nav */
+.main-nav {
+  padding: 15px 0;
+}
+.logo {
+  margin-right: 70px;
+}
+.flight,
+.train,
+.bus,
+.movies,
+.events,
+.launch {
+  /* margin-right: 16px; */
+  padding: 4px 16px 4px 12px;
+}
+.flight a h4,
+.train a h4,
+.bus a h4, 
+.movies a h4,
+.events a h4,
+.launch a h4{
+  color: var(--grays-dark-text, #333);
+  text-align: right;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Work Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 29px; /* 161.111% */
+  margin-left: 8px;
+  margin-bottom: 0;
+}
+
+.launch {
+  border-radius: 10px;
+  border: 2px solid var(--primary-light, #b5e2c8);
+}
+
+.launch a h4 {
+  color: var(--primary-main, #079d49);
+}
+.main-nav-right-side ul {
+  margin-bottom: 0;
+}
+.main-nav-left-side ul {
+  margin-bottom: 0;
+}
+.main-nav-right-side ul li a,
+.main-nav-right-side ul li span {
+  color: #333 !important;
+  text-align: right;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Metropolis Regular";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px; /* 125% */
+}
+
+.main-nav-right-side ul li:first-child {
+  margin-right: 20px;
+}
+.main-nav-right-side ul li:nth-child(2) {
+  margin-right: 18px;
+}
+
+.dropdown-container button {
+  border-radius: 10px;
+}
+.main-nav-right-side .dropdown-container button img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.main-nav-right-side .dropdown-container button h5 {
+  color: #333;
+  font-family: 'Metropolis Medium';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 0;
+  margin-right: 9px;
+}
+
+.main-nav-right-side .dropdown-container button:hover {
+  background-color: white;
+}
+
+.btn.show {
+  background-color: transparent;
+}
+
+/* Banner */
+.baner-image {
+  width: 100%;
+}
+/* .banner{
+    background-image: url('../img/banner-image.png');
+    height: 207px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+} */
+.banner-search-container {
+  position: relative;
+}
+.banner-search {
+  margin-top: -25px;
+  border-radius: 20px;
+  background: #fff !important;
+  position: absolute;
+  width: 100%;
+
+  /* Shadow/Large */
+  box-shadow: 0px 4px 8px 0px rgba(109, 147, 108, 0.12);
+  padding: 20px;
+}
+.search-type-select .form-check {
+  margin-right: 23px;
+  margin-bottom: 8px;
+}
+
+.search-type-select .form-check input {
+  margin-right: 10px;
+  display: none;
+}
+
+.search-type-select .form-check label {
+  color: #000;
+  font-family: 'Metropolis Regular';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 22px; /* 183.333% */
+  letter-spacing: -0.289px;
+}
+
+.banner-search [type="radio"]:checked,
+.banner-search [type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+.banner-search [type="radio"]:checked + label,
+.banner-search [type="radio"]:not(:checked) + label {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: #666;
+}
+.banner-search [type="radio"]:checked + label:before,
+.banner-search [type="radio"]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #000;
+  border-radius: 100%;
+  background: #fff;
+}
+.banner-search [type="radio"]:checked + label:after,
+.banner-search [type="radio"]:not(:checked) + label:after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #000;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.banner-search [type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+.banner-search [type="radio"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+/* Search Container */
+.search-container {
+  margin-top: 8px;
+}
+.search-item-from {
+  padding: 5px 17px;
+  border-radius: 10px;
+  border: 1px solid #dadada;
+  height: auto;
+  margin: 0 10px;
+}
+.search-item-from:first-child {
+  margin-left: 0;
+}
+.search-item-from svg {
+  margin-right: 13px;
+}
+.search-item-from div label {
+  color: #f88922;
+
+  /* Section Secondary Title */
+  font-family: 'Metropolis Regular';
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 12px; /* 133.333% */
+  text-transform: uppercase;
+}
+.search-item-from div input {
+  color: var(--title-default-black, #333);
+  font-family: 'Metropolis Medium';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px; /* 128.571% */
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+.search-item-from div input:focus {
+  outline: none;
+  box-shadow: none; /* Change the color and size as needed */
+}
+
+.search-item-from div input[type="date"] {
+  display: none;
+}
+
+.search-item-from div h3 {
+  color: var(--title-default-black, #333);
+  font-family: "Metropolis Regular";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 150% */
+  margin: 0;
+}
+
+.search-item-from div button {
+  color: #f88922;
+
+  /* Section Secondary Title */
+  font-family: 'Metropolis Regular';
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 12px; /* 133.333% */
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+}
+
+.btn-search {
+  border-radius: 10px;
+  background: #079d49;
+  color: #fff;
+  text-align: center;
+  font-family: 'Metropolis Medium';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 114.286% */
+  text-transform: uppercase;
+  border: none;
+  padding: 25px 35px;
+}
+
+.btn-search a{
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Metropolis Medium';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+
+}
+
+/* Search Container 2 For Booking Page */
+.search-container-book {
+  margin: 10px 0;
+}
+.search-item-from-book {
+  padding: 13px 17px;
+  border-radius: 10px;
+  border: 1px solid #dadada;
+  height: auto;
+  margin: 0 10px;
+}
+
+.search-item-from-book:first-child {
+  margin-left: 0;
+}
+.search-item-from-book:last-of-type {
+  padding: 0;
+  margin: 0;
+}
+.search-item-from-book svg {
+  margin-right: 13px;
+}
+
+.search-item-from-book div input {
+  color: var(--title-default-black, #333);
+  font-family: "Metropolis Medium";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px; /* 128.571% */
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+.search-item-from-book div input:focus {
+  outline: none;
+  box-shadow: none; /* Change the color and size as needed */
+}
+
+.search-item-from-book div input[type="date"] {
+  display: none;
+  /* color: transparent; */
+}
+
+.search-item-from-book div h3 {
+  color: var(--title-default-black, #333);
+  font-family: "Metropolis Regular";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 150% */
+  margin: 0;
+}
+.search-item-from-book:last-of-type div:last-child {
+  border-left: 1px solid #dadada;
+  padding: 13px 26px 13px 26px;
+  display: flex;
+  align-items: center;
+}
+.search-item-date-book {
+  padding: 13px;
+}
+.search-item-from-book div button {
+  color: var(--primary-main, #079d49);
+  font-family: "Metropolis Medium";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px; /* 128.571% */
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+.btn-search-book {
+  border-radius: 10px;
+  background: #079d49;
+  color: #fff;
+  text-align: center;
+  font-family: "Metropolis Medium";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 114.286% */
+  text-transform: uppercase;
+  border: none;
+  padding: 13px 35px;
+  margin-left: 20px;
+}
+
+
+/* Introducing */
+.introducing {
+  background: #f6f9f9;
+  padding-top: 200px;
+  padding-bottom: 78px;
+}
+
+.introducing-sub-title {
+  color: #ffa900;
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+
+  /* Body/Outline - Large */
+  font-family: "Libre Franklin";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px; /* 144.444% */
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.introducing-title {
+  color: #079d49;
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+
+  /* Heading/h2 */
+  font-family: "Libre Franklin";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 50px; /* 138.889% */
+  margin-bottom: 76px;
+}
+
+.card {
+  border: none;
+  background-color: transparent;
+}
+.card-title {
+  color: #333;
+  font-feature-settings: "clig" off, "liga" off;
+
+  /* Heading/h5 */
+  font-family: "Libre Franklin";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+}
+.card-brand {
+  color: #079d49;
+}
+.card-text {
+  color: #333;
+  font-feature-settings: "clig" off, "liga" off;
+
+  /* Body/Text - Large */
+  font-family: "Work Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px; /* 161.111% */
+}
+
+/* Buy Tickets */
+.buy-tickets{
+  
+  padding-top: 200px;
+  padding-bottom: 78px;
+}
+.buy-tickets-title{
+  color: var(--Gray-1, #333);
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+
+  /* Heading/h2 */
+  font-family: "Libre Franklin";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 50px; /* 138.889% */
+  margin-bottom: 34px;
+}
+
+/* .buy-tickets-item svg{
+  margin-right: 25px;
+} */
+
+.buy-tickets-item-description h3{
+  color: var(--grays-dark-text, #333);
+  font-feature-settings: 'clig' off, 'liga' off;
+
+  /* Heading/h3 */
+  font-family: "Libre Franklin";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px; /* 142.857% */
+  margin-bottom: 10px;
+}
+.buy-tickets-item-description p{
+  color: var(--grays-dark-text, #333);
+  font-feature-settings: 'clig' off, 'liga' off;
+
+  /* Body/Text - Small */
+  font-family: "Work Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 157.143% */
+}
+
+
+/* Mobile App */
+.mobile-app {
+  padding: 85px 0;
+  background: #f6f9f9;
+}
+
+.mobile-app-right-side h3 {
+  color: var(--typography-heading-alternative, #1a1a1a);
+  font-feature-settings: "clig" off, "liga" off;
+
+  /* Heading/h4 */
+  font-family: "Libre Franklin";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 34px; /* 141.667% */
+  margin-bottom: 20px;
+}
+
+.mobile-app-right-side h3 span {
+  color: var(--primary-main, #079d49);
+}
+.facilities-container {
+  margin-bottom: 41px;
+}
+.facilities-container h4 {
+  color: #000;
+  font-feature-settings: "clig" off, "liga" off;
+
+  /* Body/Text - Small */
+  font-family: "Work Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 157.143% */
+}
+
+.facilities-container h4 svg {
+  margin-right: 11px;
+}
+
+.mobile-store img:first-child {
+  margin-right: 20px;
+}
+
+
+/* Travel Options */
+.travel-options{
+  padding: 100px 0;
+}
+.travel-options-item h2{
+  color: var(--Gray-1, #333);
+  font-feature-settings: 'clig' off, 'liga' off;
+
+  /* Heading/h2 */
+  font-family: "Libre Franklin";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 50px; /* 138.889% */
+  margin-bottom: 16px;
+
+}
+
+.travel-options-item p{
+  color: var(--Gray-1, #333);
+  font-feature-settings: 'clig' off, 'liga' off;
+
+  /* Body/Text - Large */
+  font-family: "Work Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px; /* 161.111% */
+  margin-bottom: 50px;
+}
+
+.travel-activity-item h3{
+  color: var(--primary-main, #079D49);
+  font-feature-settings: 'clig' off, 'liga' off;
+  
+  /* Heading/h3 */
+  font-family: Libre Franklin;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px; /* 142.857% */
+  margin-bottom: 10px;
+
+}
+
+.travel-activity-item p{
+  color: var(--grays-dark-text, #333);
+  font-feature-settings: 'clig' off, 'liga' off;
+
+  /* Body/Text - Small */
+  font-family: "Work Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 157.143% */
+}
+
+
+/* Questions */
+.questions {
+  padding: 91px 0;
+  background: var(
+    --primary-gradient,
+    linear-gradient(180deg, #318f72 0%, #36ae89 100%)
+  );
+}
+.questions-left-side {
+  padding-right: 100px;
+}
+.questions-left-side h3 {
+  color: #fff;
+  font-feature-settings: "clig" off, "liga" off;
+
+  /* Heading/h2 */
+  font-family: "Libre Franklin";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 50px; /* 138.889% */
+  margin-bottom: 12px;
+}
+
+.questions-left-side p {
+  color: #fff;
+  font-feature-settings: "clig" off, "liga" off;
+
+  /* Body/Text - Large */
+  font-family: "Work Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px; /* 161.111% */
+  margin-bottom: 42px;
+}
+
+.questions-left-side button {
+  border-radius: 15px;
+  background: #fff;
+  padding: 20px 47px;
+  color: #333;
+  text-align: center;
+  font-family: "Libre Franklin";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: none;
+  outline: none;
+}
+.questions-right-side h3 {
+  color: #fff;
+  font-family: "Libre Franklin";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px; /* 133.333% */
+}
+.questions-right-side .divider {
+  display: block;
+  border-radius: 1px;
+  opacity: 0.4;
+  background: var(--primary-light, #b5e2c8);
+  height: 2px;
+  margin: 10px 0;
+}
+.questions-right-side p {
+  color: #fff;
+  font-feature-settings: "clig" off, "liga" off;
+
+  /* Body/Text - Large */
+  font-family: "Work Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px; /* 161.111% */
+  margin-bottom: 30px;
+}
+.questions-right-side p:last-child {
+  margin-bottom: 0;
+}
+
+/* Testimonial */
+.testimonial {
+  background: #ffffff;
+  padding: 80px 0;
+}
+.testimonial-title {
+  color: #079d49;
+  text-align: center;
+  font-family: "Libre Franklin";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 62px; /* 129.167% */
+  margin-bottom: 20px;
+}
+.testimonial-description {
+  color: #333;
+  text-align: center;
+  font-family: "Libre Franklin";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+  margin-bottom: 80px;
+}
+.stars {
+  margin-bottom: 20px;
+}
+.bi-star-fill,
+.bi-star-half {
+  color: #ffa900;
+  /* background-color: /FFA900; */
+}
+.bi-star-fill {
+  margin-right: 10px;
+}
+
+.review-item p {
+  color: #333;
+  font-family: "Libre Franklin";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+  margin-bottom: 40px;
+}
+.client-profile img {
+  height: 70px;
+  width: 70px;
+  border-radius: 100%;
+  margin-right: 20px;
+}
+.client-details h3 {
+  color: #333;
+  font-family: "Libre Franklin";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px; /* 144.444% */
+  margin-bottom: 5px;
+}
+.client-details p {
+  color: rgba(51, 51, 51, 0.6);
+  font-family: "Libre Franklin";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+  margin-bottom: 0;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  background: var(--primary-dark, #108845);
+  backdrop-filter: blur(10px);
+  padding: 9px 0;
+  margin-bottom: 0;
+}
+.breadcrumb-left-side h4:first-child {
+  overflow: hidden;
+  color: #fff;
+  font-feature-settings: "clig" off, "liga" off;
+  text-overflow: ellipsis;
+  font-family: "Work Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px; /* 157.143% */
+}
+.breadcrumb-left-side h4 {
+  overflow: hidden;
+  color: #fff;
+  font-feature-settings: "clig" off, "liga" off;
+  text-overflow: ellipsis;
+
+  /* Body/Text - Small */
+  font-family: "Work Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 157.143% */
+  margin-bottom: 0;
+}
+.breadcrumb-left-side svg {
+  margin: 0 8px;
+}
+.breadcrumb-right-side p {
+  color: #fff;
+  font-feature-settings: "clig" off, "liga" off;
+
+  /* Body/Text - Small */
+  font-family: "Work Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 0;
+}
+.breadcrumb-right-side-payment{
+  padding: 6px 7px;
+  border-radius: 24px;
+  display: flex;
+  background: #EFA01F;
+}
+
+.breadcrumb-right-side-payment svg{
+  margin-right: 4px;
+}
+.breadcrumb-right-side-payment span{
+  color: #FFF;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: "Metropolis Medium";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px; /* 150% */
+}
+
+.breadcrumb-right-side p span {
+  color: #fff;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Work Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px; /* 157.143% */
+}
+
+/* Booking */
+.booking {
+  padding-top: 20px;
+  padding-bottom: 176px;
+  background-color: #f2f5f8;
+}
+
+.filters-left-side h4 {
+  color: #333;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: 'Metropolis Medium';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 17px; /* 106.25% */
+  margin-right: 40px;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+.filters-left-side button {
+  border-radius: 5px;
+  border: 0.5px solid #079d49;
+  padding: 5px 10px;
+  color: #079d49;
+  text-align: right;
+  font-family: 'Metropolis Medium';
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15px; /* 136.364% */
+  background-color: transparent;
+}
+.filters-right-side h4 {
+  color: #707070;
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: 'Metropolis Regular';
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px; /* 136.364% */
+  margin-bottom: 0;
+}
+
+.filters-right-side select,
+.filters-right-side select option {
+  color: var(--primary-main, #079d49);
+  text-align: right;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: 'Metropolis Medium';
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 15px; /* 136.364% */
+  background-color: transparent;
+  border: none;
+}
+
+.main-filters-item h3 {
+  color: #f88922;
+  font-family: "Metropolis Regular";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 12px; /* 109.091% */
+  text-transform: uppercase;
+  margin-top: 23px;
+  margin-bottom: 14px;
+}
+.filters-checkbox {
+  margin-bottom: 16px;
+}
+.main-filters-item .filters-checkbox:last-child {
+  margin-bottom: 0;
+}
+
+.filters-checkbox input {
+  width: 20px;
+  height: 20px;
+  margin-right: 11px;
+}
+.filters-checkbox input:checked {
+  accent-color: var(--Shohoz-Green, #079d49);
+}
+
+.filters-checkbox label {
+  color: #707070;
+  font-family: 'Metropolis Regular';
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 14px; /* 107.692% */
+}
+
+/* Bus Item */
+.bus-item {
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid var(--grays-divider, #dadada);
+  background: #fff;
+
+  /* Shadow/Mid */
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px;
+}
+.bus-items-details-container {
+  padding-bottom: 20px;
+}
+.bus-logo-container img {
+  margin-right: 12px;
+  width: 28px;
+  height: 28px;
+}
+
+.bus-title {
+  color: #333;
+  font-feature-settings: "clig" off, "liga" off;
+
+  /* Heading/h5 */
+  font-family: "work sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 144.444% */
+}
+
+/* .bus-schedule{
+    /* margin: 0 0px; */
+/* } */
+
+.bus-starting-time h3,
+.bus-ending-time h3 {
+  color: #333;
+  font-family: 'Metropolis Regular';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 17px; /* 106.25% */
+}
+
+.bus-starting-time p,
+.bus-ending-time p {
+  color: var(--grays-dark-text, #333);
+  text-align: right;
+  font-family: "Work Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.145px;
+}
+
+.bus-starting-time h3,
+.bus-starting-time p {
+  text-align: right;
+}
+.bus-ending-time h3,
+.bus-ending-time p {
+  text-align: left;
+}
+.bus-schedule-duration {
+  margin: 0 21px;
+}
+.bus-schedule-duration p {
+  color: var(--grays-gray-secondary-text, #b7b7b7);
+  text-align: center;
+  font-family: "Work Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.145px;
+  margin-top: 10px;
+}
+.bus-price {
+  margin-right: 37px;
+}
+.bus-price h3 {
+  color: #707070;
+  text-align: right;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Work Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 157.143% */
+  text-decoration-line: strikethrough;
+}
+
+.bus-price h2 {
+  color: #333;
+  text-align: right;
+  font-feature-settings: "clig" off, "liga" off;
+
+  /* Heading/h4 */
+  font-family: "Libre Franklin";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 34px; /* 141.667% */
+}
+
+.book-btn {
+  padding: 6px 22px;
+  border-radius: 8px;
+  border: 0.5px solid var(--primary-main, #079d49);
+  background: var(--primary-main, #079d49);
+  color: #fff;
+  text-align: center;
+  font-family: 'Metropolis Medium';
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15px; /* 136.364% */
+  border: none;
+}
+
+.book-btn a{
+  text-decoration: none;
+  font-family: 'Metropolis Medium';
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 700;
+  color: #fff;
+
+}
+
+.book-btn-disabled{
+  opacity: 0.5;
+}
+
+
+
+.discount {
+  padding: 10px 0;
+  color: var(--Orange, #f88922);
+  font-feature-settings: "clig" off, "liga" off;
+  margin-bottom: 10px;
+
+  /* Heading/h6 */
+  font-family: "Libre Franklin";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 142.857% */
+  border-top: 0.5px solid var(--grays-divider, #dadada);
+  border-bottom: 0.5px solid var(--grays-divider, #dadada);
+}
+
+.discount svg {
+  margin-right: 4px;
+}
+.bus-item-links{
+  padding: 0;
+  margin:  0;
+}
+.bus-item-links li {
+  border-radius: 27px;
+  background: var(--primary-lightest, #E6F5ED);
+  padding: 0px 14px;
+  margin-right: 20px;
+
+}
+.bus-item-links .col-lg-2{
+  width: auto !important;
+}
+.bus-item-links li a {
+  color: var(--primary-main, #079d49);
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Work Sans";
+  font-size: 11px;
+  /* margin: 0 auto; */
+
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px; /* 157.143% */
+}
+
+/* Deck and Boarding Point */
+.deck-and-boarding{
+  padding: 20px 0;
+}
+.deck-and-boarding-left-side .select-deck{
+  color: var(--grays-dark-text, #333);
+  font-family: "Work Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: block;
+  margin-bottom: 10px;
+}
+.deck-and-boarding-left-side select{
+  border-radius: 4px;
+  border: 1px solid #CCC;
+  width: 100%;
+  padding: 10px 20px;
+  color: var(--grays-dark-text, #333);
+  font-feature-settings: 'clig' off, 'liga' off;
+
+  /* Body/Text - Large */
+  font-family: "Work Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px; /* 161.111% */
+  margin-bottom: 20px;
+  background-color: transparent;
+}
+
+.select-seats-main-container{
+  padding: 30px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: #FFF;
+  box-shadow: 0px 2px 8px 0px rgba(108, 152, 166, 0.05);
+}
+.select-seats-main-container .seats-status{
+  margin-bottom: 30px;
+}
+.available h2,
+.booked h2,
+.selected h2{
+  font-family:" Work Sans";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 0;
+}
+
+.available div,
+.booked div,
+.selected div{
+  width: 18px;
+  height: 18px; 
+  margin-right: 5px;
+  border-radius: 4px;
+}
+.available,
+.booked{
+  margin-right: 40px;
+}
+.available div{
+  background: var(--primary-light, #B5E2C8);
+}
+.booked div{
+  background: #F1DDDD; 
+}
+.selected div{
+  background: var(--primary-main, #079D49); 
+}
+
+.available h2{
+  color: var(--primary-dark, #108845); 
+}
+.booked h2{
+  color: #801C27;
+}
+.selected h2{
+  color: var(--primary-main, #079D49); 
+}
+.select-seats-container{
+  margin-bottom: 30px;
+}
+.select-seats-container h3{
+  color: var(--app-text-black, #0F2444);
+  font-family: Arial;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.select-seats-container h4{
+  color: var(--Secondary---Alternative, #FE7C02);
+  font-family: Arial;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.gate{
+  color: var(--app-text-gray, #91929E);
+  font-family: Arial;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.single-seat{
+  width: 47px;
+  height: 47px; 
+  border-radius: 16px;
+  background: transparent;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: Arial;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 11px; /* 100% */
+  text-transform: uppercase; 
+}
+.seat-column .booked{
+  color: #801C27; 
+  background: #F1DDDD; 
+}
+.seat-column .available{
+  background: var(--primary-light, #B5E2C8);
+  color: var(--primary-dark, #108845); 
+
+}
+.seat-column .selected{
+  background: var(--primary-main, #079D49); 
+  color: #E6F2F0; 
+}
+.seat-column .fixed{
+ background-color: rgba(222, 224, 240, 1);
+}
+
+
+.select-boarding{
+  color: var(--grays-dark-text, #333);
+  font-family: "Work Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.deck-and-boarding-right-side select{
+  border-radius: 4px;
+  border: 1px solid #CCC;
+  width: 100%;
+  padding: 10px 20px;
+  color: var(--grays-gray-secondary-text, #B7B7B7); 
+  font-feature-settings: 'clig' off, 'liga' off;
+
+  /* Body/Text - Large */
+  font-family: "Work Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px; /* 161.111% */
+  margin-bottom: 20px;
+  background-color: transparent;
+}
+
+.seat-details-container{
+  border-radius: 8px;
+  border: 0.5px solid var(--background-gray-ligght, #EEE);
+  background: #F8FAF9;
+  margin-bottom: 21px;
+}
+
+.seat-details-container-title{
+  color: var(--Secondary---Alternative, #FE7C02);
+  font-family: Arial;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 10px;
+  border-bottom: 1px solid #EEE;;
+}
+
+.seats-fare-container{
+  padding: 10px;
+}
+.seats-fare-container span{
+  color: var(--app-text-gray, #91929E);
+  font-family: "Work Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.145px;
+}
+
+.single-seat-price{
+  padding: 12px 10px;
+  border-bottom: 1px solid #F0F1FA;;
+}
+
+.single-seat-price span:first-child{
+  color: var(--app-text-black, #0F2444);
+  font-feature-settings: 'clig' off, 'liga' off;
+
+  /* Body/Text - Small */
+  font-family: "Work Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 157.143% */
+}
+
+.single-seat-price span:last-child{
+  color: var(--app-text-black, #0F2444);
+  font-feature-settings: 'clig' off, 'liga' off;
+
+  /* Heading/h6 */
+  font-family: "Libre Franklin";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 142.857% */
+}
+
+.total-seat-price{
+  padding: 10px;
+}
+
+.total-seat-price span{
+  color: var(--typography-heading-alternative, #1A1A1A);
+  text-align: right;
+  font-feature-settings: 'clig' off, 'liga' off;
+
+  /* Heading/h3 */
+  font-family: "Libre Franklin";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px; /* 142.857% */
+}
+.total h3{
+  color: var(--app-text-black, #0F2444);
+  font-feature-settings: 'clig' off, 'liga' off;
+
+  /* Body/Text - Large */
+  font-family: "Work Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px; /* 161.111% */
+}
+.total span{
+  color: var(--app-text-gray, #91929E);
+  font-feature-settings: 'clig' off, 'liga' off;
+
+  /* Body/Text - Small */
+  font-family: "Work Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 157.143% */
+  margin-top: 5px;
+}
+
+
+.child-seat-fare{
+  margin: 20px 10px 10px 10px;
+  padding: 12px;
+  border-radius: 8px;
+  background: #FEF8E9;
+
+  /* Shadow/Small */
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.06);
+  color: var(--app-text-gray, #91929E);
+  font-feature-settings: 'clig' off, 'liga' off;
+
+  /* Body/Text - Small */
+  font-family: "Work Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 157.143% */
+}
+
+.child-seat-fare svg{
+  margin-right: 8px;
+}
+
+.continue-purchase-btn{
+  width: 100%;
+  padding: 15px 0;
+  border: none;
+  border-radius: 8px;
+  background: var(--primary-main, #079D49);
+  color: #FFF;
+  text-align: center;
+  font-family: "Work Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 19px; /* 135.714% */
+}
+
+.continue-purchase-btn a{
+  text-decoration: none;
+  font-family: "Work Sans";
+  font-size: 14px;
+  color: #FFF;
+  font-style: normal;
+  font-weight: 700;
+}
+
+/* Mobile Menu Filers */
+.main-filters-mobile-menu{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  height: 100vh;
+  padding: 10px 30px;
+}
+
+
+/* Mobile Menu Filers */
+.main-filters-mobile-menu{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  height: 100vh;
+  padding: 10px 30px;
+}
+
+/* Personal Details */
+.personal-details {
+  padding: 36px 0 50px 0;
+  background-color: #f2f5f8;
+}
+.personal-details-container {
+  border-radius: 10px;
+  background: #fff;
+  margin-bottom: 40px;
+  padding: 16px;
+}
+.contact-details {
+  margin-bottom: 25px;
+}
+.contact-details-icon {
+  width: 32px;
+  height: 32px;
+  /* padding: 6px; */
+
+  border-radius: 100%;
+  background-color: var(--Shohoz-Green, #079d49);
+  margin-right: 12px;
+}
+.contact-details-title-container h2 {
+  color: #333;
+  font-family: "Work Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 171.429% */
+  margin-bottom: 0;
+}
+.contact-details-title-container p {
+  color: #707070;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Work Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px; /* 125% */
+  margin-bottom: 0;
+}
+.contact-details-phone h3,
+.contact-details-mobile h3 {
+  color: var(--Text-Title, #333);
+  font-family: "Work Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 15px; /* 125% */
+  margin-bottom: 0;
+}
+.contact-details-phone p,
+.contact-details-mobile p {
+  color: #999;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Work Sans";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px; /* 150% */
+  margin-bottom: 5px;
+}
+
+.contact-details-mobile h3 span {
+  color: var(--Text-Title, #333);
+  font-family: "Work Sans";
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 15px;
+}
+.input-container {
+  position: relative;
+}
+.input-container input {
+  width: 100%;
+  padding: 11px 16px 11px 16px;
+  border: none;
+  border-radius: 10px;
+  background: #f4f4f4;
+  color: var(--Secondary-subtitles, #333);
+  font-family: "Work Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 19px; /* 135.714% */
+}
+.input-container span {
+  position: absolute;
+  right: 16px;
+  top: 11px;
+  color: #079d49;
+  font-family: "Metropolis Regular";
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px; /* 200% */
+  text-transform: uppercase;
+}
+.passenger-details {
+  color: var(--title-default-black, #333);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Work Sans";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px; /* 123.077% */
+}
+.passenger-description {
+  color: var(--Secondary-subtitles, #999);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Work Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px; /* 125% */
+  margin-bottom: 13px;
+}
+
+.passenger {
+  border-radius: 10px;
+  background: #fff;
+  padding: 16px;
+  margin-bottom: 18px;
+}
+.passenger-title-area {
+  margin-bottom: 35px;
+}
+
+.passenger-title-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  background-color: var(--Orange, #f2994a);
+  margin-right: 12px;
+}
+
+.passenger-title-area h2 {
+  color: #333;
+  font-family: "Work Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 171.429% */
+  margin-bottom: 0;
+}
+
+.passenger-details-input div label {
+  color: var(--Text-Title, #333);
+  font-family: "Metropolis Regular";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px; /* 125% */
+  margin-bottom: 7px;
+}
+.passenger-details-input div input {
+  border-radius: 10px;
+  background: #f4f4f4;
+  width: 100%;
+  padding: 11px 16px;
+  color: var(--Secondary-subtitles, #999);
+  font-family: "Metropolis Regular";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border: none;
+}
+
+.gender-area {
+  margin-top: 25px;
+}
+
+.gender-area h3 {
+  color: var(--Text-Title, #333);
+  font-family: "Metropolis Regular";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 15px; /* 125% */
+  margin-right: 50px;
+  margin-bottom: 0;
+}
+
+.gender-area button:first-of-type {
+  border-radius: 10px;
+  border: 1px solid #079d49;
+  background: #fff;
+  color: #079d49;
+  text-align: center;
+  font-family: "Metropolis Regular";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15px; /* 136.364% */
+  padding: 9px 20px;
+  margin-right: 17px;
+}
+
+.gender-area button:last-of-type {
+  border-radius: 10px;
+  background: #f1f4f3;
+  border: none;
+  color: #707070;
+  text-align: center;
+  font-family: "Metropolis Regular";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 15px; /* 136.364% */
+  padding: 9px 20px;
+}
+
+.time-left {
+  border-radius: 4px;
+  background: #ff7c7c;
+  box-shadow: 7.43px 49.03px 60px 0px rgba(108, 126, 147, 0.12);
+  padding: 10px 0;
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.time-left svg {
+  margin-right: 10px;
+}
+.time-left h3 {
+  color: #fff;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Work Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 0;
+}
+.time-left h3 b {
+  color: #fff;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Work Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.ticket-details{
+  border-radius: 10px;
+  background: #FFF;
+
+  /* Shadow/Small */
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.06);
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.ticket-details-title-area img{
+  width: 42px;
+  height: 42px;
+  margin-right: 13px;
+
+}
+
+.ticket-details-title h3{
+  color: #333;
+  font-family: "Metropolis Regular";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 17px; /* 94.444% */
+  margin-bottom: 0;
+}
+
+.ticket-details-title p{
+  color: #707070;
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: "Metropolis Regular";
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 15px; /* 125% */
+margin-bottom: 0;
+}
+
+.fare-and-seats{
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.fare-and-seats div p{
+  color: #AFAFAF;
+
+  /* Section Secondary Title */
+  font-family: "Metropolis Regular";
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 12px; /* 133.333% */
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.fare-and-seats div h2{
+  color: var(--Shohoz-Green, #079D49);
+  font-family: "Metropolis Regular";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 17px; /* 94.444% */
+  margin-bottom: 0;
+}
+
+.departure-arrival span{
+  color: #AFAFAF;
+
+  /* Section Secondary Title */
+  font-family: "Metropolis Regular";
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 12px; /* 133.333% */
+  text-transform: uppercase;
+}
+
+.destination span{
+  color: #333;
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: "Metropolis Regular";
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: 16px; /* 123.077% */
+}
+
+.ticket-time span{
+  color: #333;
+  font-feature-settings: 'clig' off, 'liga' off;
+
+  /* Secondary Title (Inside Card & ...) */
+  font-family: "Metropolis Regular";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px; /* 123.077% */
+}
+
+.boarding-title{
+  margin-top: 20px;
+  margin-bottom: 8px;
+  color: #AFAFAF;
+
+  /* Section Secondary Title */
+  font-family: "Metropolis Regular";
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 12px; /* 133.333% */
+  text-transform: uppercase;
+  margin-bottom: 0;
+
+}
+.boarding-place{
+  color: #333;
+  font-family: "Metropolis Regular";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px; /* 138.462% */
+  margin-bottom: 0;
+
+}
+.boarding-place span{
+  color: #079D49;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: "Metropolis Regular";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 133.333% */
+  margin-left: 10px;
+}
+.boarding-address{
+  color: #707070;
+  font-family: "Metropolis Regular";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 150% */
+  margin-bottom: 0;
+}
+.continue-purchase{
+  width: 100%;
+  padding: 15px 0;
+  border-radius: 8px;
+  background: var(--primary-main, #079D49);
+  border: none;
+  color: #FFF;
+  text-align: center;
+
+  /* Button/Label */
+  font-family: "Work Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 14px; /* 100% */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.continue-purchase a{
+  color: #FFF;
+  text-decoration: none;
+}
+
+/* Footer */
+footer {
+  padding: 86px 0 40px 0px;
+  background: linear-gradient(90deg, #2e6755 -4.44%, #319274 101.26%);
+}
+
+.main-footer div:first-child svg {
+  margin-bottom: 42px;
+}
+.main-footer div:first-child p {
+  color: #e8e8e8;
+  font-family: "Libre Franklin";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+}
+
+.main-footer div h3 {
+  color: #fff;
+  font-family: "Libre Franklin";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px; /* 144.444% */
+  margin-bottom: 20px;
+}
+
+.main-footer div ul li a {
+  color: #e8e8e8;
+  font-family: "Libre Franklin";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.main-footer div ul li {
+  margin-bottom: 15px;
+  /* margin-left: 0; */
+}
+
+.main-footer div ul {
+  padding: 0;
+}
+
+.sub-footer {
+  margin-top: 23px;
+}
+
+.sub-footer p,
+.sub-footer ul li a {
+  color: #e8e8e8;
+  font-family: "Libre Franklin";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+}
+
+.bi-facebook,
+.bi-instagram {
+  font-size: 22px;
+}
+
+.bi-instagram {
+  margin-left: 30px;
+}
+
+
+
+/* Payment Details */
+.payment-details{
+  padding-top: 40px;
+  padding-bottom: 175px;
+  background-color: #f2f5f8;
+}
+.payment-details-container{
+  padding: 17px;
+  border-radius: 10px;
+  background: #FFF;
+  margin-bottom: 33px;
+}
+.payment-details-container h3:first-child{
+  color: #AFAFAF;
+  font-family: "Metropolis Regular";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.payment-container{
+  margin-left: 0;
+  margin-right: 0;
+
+}
+.payment-item{
+  border-radius: 10px;
+  background: #F4F4F4;
+  padding: 11px 16px;
+  margin-bottom: 8px;
+  width: 49%;
+}
+.payment-item svg,
+.payment-item img{
+  margin-right: 16px;
+}
+.payment-item h3{
+  color: #333;
+  font-family: "Metropolis Regular";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 138.462% */
+  margin-bottom: 0;
+}
+
+.payment-container .checked{
+  border: 1px solid var(--primary-main, #079D49); 
+  background: #FFF; 
+}
+
+.payment-container .checked h3{
+  color: var(--primary-main, #079D49);
+  font-family: "Metropolis Regular";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px; /* 138.462% */
+
+}
+
+.security{
+  border-radius: 10px;
+  background: #FFF;
+}
+
+.security-container{
+  padding: 21px 16px 50px 16px;
+}
+
+.security-title-area svg{
+  margin-right: 18px;
+}
+
+.security-title h2{
+  color: #333;
+  font-family: "Metropolis Regular";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 17px; /* 121.429% */
+}
+.security-title h2 span{
+  color: #F88922; 
+}
+
+
+.security-title p {
+  color: #707070;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: "Metropolis Regular";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px; /* 125% */
+}
+.insurance-container{
+  margin-top: 20px;
+}
+.insurance-item{
+  margin-right: 8px;
+}
+.insurance-title{
+  border-radius: 10px 10px 10px 0px;
+  background: var(--primary-light, #B5E2C8);
+  padding: 17px;
+  height: 73.549px; 
+}
+.insurance-title h3{
+  color: var(--primary-main, #079D49);
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: "Metropolis Regular";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15px; /* 125% */
+}
+
+.insurance-details{
+  margin-top: -20px;
+  padding: 17px;
+  border-radius: 10px;
+  background: #F6FFFE;
+}
+
+.insurance-details h4{
+  color: #727272;
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: "Metropolis Regular";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px; /* 150% */
+}
+.insurance-details h2{
+  color: #333;
+  text-align: center;
+  font-family: "Metropolis Regular";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px; /* 157.143% */
+}
+
+.security-sub-footer{
+  padding: 18px 16px;
+  border-top: 1px solid #7070702d;
+}
+.security-footer-left-side input{
+  accent-color: var(--primary-main, #079D49);
+  margin-right: 10px;
+}
+.security-footer-left-side label{
+  color: #333;
+  font-feature-settings: 'salt' on;
+  font-family: "Metropolis Regular";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 13%; /* 1.43px */
+}
+.security-footer-left-side label span{
+  color: var(--primary-main, #079D49);
+  font-feature-settings: 'salt' on;
+  font-family: "Metropolis Regular";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 154.523%; /* 18.543px */
+}
+
+.security-footer-right-side p{
+  color: #999;
+  font-feature-settings: 'salt' on;
+  font-family: "Metropolis Regular";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 154.523%; /* 16.997px */
+  margin-bottom: 0;
+}
+
+.security-footer-right-side p a{
+  color: var(--primary-main, #079D49);
+  font-feature-settings: 'salt' on;
+  font-family: "Metropolis Regular";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 154.523%;
+  text-decoration-line: underline;
+}
+
+.time-left{
+  border-radius: 4px;
+  background: #FF7C7C;
+  box-shadow: 7.43px 49.03px 60px 0px rgba(108, 126, 147, 0.12);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.time-left h3{
+  color: #FFF;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: "Work Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-left: 10px;
+  margin-bottom: 0;
+}
+
+.ticket-details{
+  border-radius: 10px 10px 0 0;
+background: #FFF;
+box-shadow: 0px 3px 15px 0px rgba(98, 98, 98, 0.07);
+padding: 16px;
+}
+
+.cupon-code{
+  border-radius: 10px;
+  background: linear-gradient(257deg, #FCA785 1.68%, #FA5769 113.03%);
+  padding: 16px 12px;
+  margin-bottom: 32px;
+}
+.cupon-code-icon h3{
+  color: #FFF;
+  font-family: "Metropolis Regular";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  margin-left: 20px;
+}
+
+.fare-details{
+  /* background-image: url('../img/Subtract.jpg'); */
+  /* background-repeat: no-repeat;
+  background-size: cover; */
+  padding: 15px 16px 18px 16px;
+  /* filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.10)); */
+  background-color: #f8f8f8 ;
+  margin-bottom: 31px;
+  border-radius: 10px;
+
+}
+.fare-details-title{
+  padding-bottom: 11px;
+}
+.fare-details-title span{
+  /* color: var(--Orange, #F2994A); */
+  font-family: "Metropolis Regular";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.cash-payment{
+  color: #707070;
+  font-family: "Metropolis Regular";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 163.636% */
+  margin-right: 7px;
+}
+
+.fare-title{
+  color: var(--Orange, #F2994A);
+}
+.fare-details-divider{
+  margin-bottom: 10px;
+}
+.fare-details-item{
+  margin-bottom: 16px;
+}
+.fare-details-item span:first-child{
+  color: #707070;
+  font-family: "Metropolis Regular";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 183.333% */
+}
+
+.fare-details-item span:last-child{
+  color: #333;
+  text-align: right;
+  font-family: "Metropolis Regular";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px; /* 169.231% */
+}
+.total{
+  margin-top: 11px;
+}
+
+.total span{
+  color: var(--primary-main, #079D49);
+  font-family: "Metropolis Regular";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px; /* 169.231% */
+  text-transform: uppercase;
+}
+
+.total h2{
+  color: var(--secondary-main, #F88922);
+  text-align: right;
+  font-family: "Metropolis Regular";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px; /* 122.222% */
+}
+
+.total del{
+  color: var(--Primary-subtitles, #707070);
+  text-align: right;
+  font-family: "Metropolis Regular";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px; /* 125% */
+  text-decoration-line: strikethrough;
+  margin-right: 5px;
+}
+.fare-details-divider{
+  position: relative;
+}
+.fare-details-divider div{
+  width: 13.639px;
+  height: 14.471px;
+  background-color: #ffffff;
+  position: absolute;
+  border-radius: 100%;
+}
+
+.fare-details-divider div:first-of-type{
+  top: 10px;
+  left: -23px;
+}
+.fare-details-divider div:last-of-type{
+  top: 10px;
+  right: -23px;
+}
+
+.bottom-circle div{
+  width: 13.639px;
+  height: 14.471px;
+  background-color: #ffffff;
+  border-radius: 100%;
+  margin-bottom: -40px;
+}
+
+.note{
+  padding: 16px;
+  border-radius: 0px 0px 10px 10px;
+  background: #EFF9F3;
+}
+.note h2{
+  color: var(--primary-main, #079D49);
+
+  /* Section Primary Title */
+  font-family: "Metropolis Regular";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 13px; /* 130% */
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.note ul {
+  list-style: none;
+  padding-left: 16px;
+}
+.note ul li::before {
+  content: "\2022";
+  color: #C4C4C4;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+
+.note ul li{
+  color: #707070;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: "Metropolis Regular";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px; /* 125% */
+  margin-bottom: 10px;
+}
+
+.note ul li span{
+  color: var(--primary-main, #079D49);
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: "Metropolis Regular";
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 15px;
+
+}
+.note ul li a{
+  color: var(--primary-main, #079D49);
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: "Metropolis Regular";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px;
+  text-decoration-line: underline;
+}
+
+.confirmation{
+  margin-top: 20px;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: 0.5px solid #C8C8C8;
+  background: #FFF;
+  margin-bottom: 20px;
+}
+
+.confirmation h2{
+  color: #707070;
+  font-family: "Metropolis Regular";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 123.077% */
+  margin-bottom: 0;
+}
+
+.confirmation h2 span{
+  color: var(--primary-main, #079D49);
+  font-family: "Metropolis Regular";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.proceed-to-payment{
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--primary-main, #079D49);
+  background: var(--primary-main, #079D49);
+  padding: 12px 18px;
+  color: #FFF;
+  text-align: center;
+
+  /* Button/Label */
+  font-family: "Work Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 14px; /* 100% */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+
+.proceed-to-payment-link{
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 14px; /* 100% */
+  color: #FFF !important;
+  text-decoration: none;
+}
+
+
+/* Payment Successful */
+.payment-successful{
+  padding: 50px 0 83px 0;
+  
+}
+.success-image{
+  margin-bottom: 8px;
+  text-align: center;
+  /* padding: 0 auto; */
+}
+.payment-successful-title{
+  color: var(--primary-main, #079D49);
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: "Metropolis Medium";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px; /* 100% */
+}
+.payment-sucssful-description{
+  color: #707070;
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: "Metropolis Regular";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px; /* 115.385% */
+}
+.payment-successful-container{
+
+}
+.payment-successful-left-side{}
+.payment-confirmation{
+  padding: 15px;
+  border-radius: 10px;
+  background: #EDF6ED;
+}
+.payment-confirmation p{
+  color: #798879;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: "Metropolis Regular";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px; /* 125% */
+  margin-bottom: 10px;
+}
+.payment-confirmation ul{
+  list-style: circle;
+  color: #C4C4C4;
+  padding-left: 12px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.payment-confirmation ul li{
+  list-style: circle;
+  color: #798879;
+  font-feature-settings: 'clig' off, 'liga' off;
+
+  /* S1 - Primary Subtitle */
+  font-family: "Roboto";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px; /* 125% */
+  margin-top: 7px;
+}
+.payment-confirmation ul li span{
+  color: var(--primary-main, #079D49);
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: "Roboto";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15px;
+}
+.covid{
+  padding: 45px 13px 27px 17px;
+  border-bottom: 1px solid #E4E4E4;
+}
+.covid-left{}
+.covid-left h3{
+  color: #333;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: "Metropolis Regular";
+  font-size: 14px;
+  font-style: normal;
+  padding-bottom: 0;
+  font-weight: 700;
+  line-height: 18px; /* 128.571% */
+  /* margin-bottom: 5px; */
+  margin: 0;
+  padding: 0;
+}
+.covid-left a{
+  color: var(--primary-main, #079D49);
+
+  /* Offer Title */
+  font-family: "Metropolis Regular";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 14px; /* 127.273% */
+  text-transform: uppercase;
+}
+.covid-right{}
+.covid-right img{}
+.travel-checklist{
+  padding: 18px 13px 14px 17px;
+
+}
+.travel-checklist-title{
+  color: #333;
+  font-feature-settings: 'clig' off, 'liga' off;
+
+  /* Section Header Bold */
+  font-family: "Metropolis Medium";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px; /* 120% */
+  margin-bottom: 10px;
+}
+.travel-checklist-container{}
+.travel-checklist-left-side{}
+.travel-checklist-left-side p{
+  color: #707070;
+
+  /* S1 - Primary Subtitle */
+  font-family: "Roboto";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px; /* 125% */
+}
+.travel-checklist-left-side span{
+  color: var(--Orange, #F2994A);
+
+  /* S1 - Primary Subtitle */
+  font-family: "Roboto";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15px;
+}
+.travel-checklist-right-side{}
+.travel-checklist-right-side img{}
+.some-info{
+  padding: 0px 13px 12px 17px;
+}
+.some-info-title{
+  color: #333;
+  font-feature-settings: 'clig' off, 'liga' off;
+
+  /* Secondary Title (Inside Card & ...) */
+  font-family: "Metropolis Regular";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px; /* 123.077% */
+}
+.some-info p{
+  color: #707070;
+  font-family: "Metropolis Regular";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px; /* 158.333% */
+}
+.some-info p a{
+  color: var(--primary-main, #079D49);
+  font-family: "Metropolis Regular";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  text-decoration-line: underline;
+}
+.travel-tips{
+  padding: 0px 13px 12px 17px
+}
+.travel-tips-title{
+  color: #333;
+  font-feature-settings: 'clig' off, 'liga' off;
+
+  /* Secondary Title (Inside Card & ...) */
+  font-family: "Metropolis Regular";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px; /* 123.077% */
+}
+.travel-tips p{
+  color: #707070;
+  font-family: "Metropolis Regular";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px; /* 158.333% */
+}
+.payment-successful-right-side{}
+.departure-journey-details{
+  padding: 16px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  background: #F3F3F3;
+}
+.departure-journey-details-title{
+  color: #AFAFAF;
+  font-family: "Metropolis Medium";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 13px;
+}
+.departure-journey-details-container{}
+.departure-journey-details-item{
+  margin-bottom: 13px;
+}
+.departure-journey-details-item span:first-of-type{
+  color: #707070;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: "Metropolis Regular";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px; /* 125% */
+}
+.departure-journey-details-item span:last-of-type{
+  color: #333;
+  font-family: "Metropolis Medium";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.view-ticket-btn{
+  padding: 12px 0;
+  border-radius: 8px;
+  background: var(--primary-main, #079D49);
+  border: none;
+  color: #FFF;
+  text-align: center;
+
+  /* Button/Label */
+  font-family:"Work Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 14px; /* 100% */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  width: 100%;
+  margin-bottom: 32px;
+}
+.terms-condition{}
+.terms-condition-title{
+  color: #333;
+  font-feature-settings: 'clig' off, 'liga' off;
+
+  /* Section Header Bold */
+  font-family: "Metropolis Regular";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px; /* 120% */
+  margin-bottom: 10px;
+}
+.terms-condition ul{
+  list-style: circle;
+  color: #C4C4C4;
+  padding-left: 12px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.terms-condition ul li{
+  color: #707070;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: "Metropolis Regular";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 166.667% */
+  margin-bottom: 2px;
+}
+
+/* Select Seat Bus Modal */
+.select-seat-modal-container{
+  /* width: 100vh; */
+  /* height: 100vh;
+  background: rgba(0, 0, 0, 0.3); 
+  position: absolute;*/
+  display: flex;
+  justify-content: end;
+  /* top: 0; */
+   
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: black;
+  position: fixed;
+  right: -10000000000000px;
+  height: 100vh;
+  width: 100%;
+  /* display: flex; */
+  /* flex-direction: column; */
+  gap: 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  overflow-y: scroll;
+  transition: 0.3s;
+  z-index: 999;
+}
+.select-seat-modal-container3{
+  /* width: 100vh; */
+  /* height: 100vh;
+  background: rgba(0, 0, 0, 0.3); 
+  position: absolute;*/
+  display: flex;
+  justify-content: end;
+  /* top: 0; */
+   
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: black;
+  position: fixed;
+  right: -10000000000000px;
+  height: 100vh;
+  width: 100%;
+  /* display: flex; */
+  /* flex-direction: column; */
+  gap: 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  overflow-y: scroll;
+  transition: 0.3s;
+  z-index: 999;
+}
+
+.close-modal:hover{
+  cursor: pointer;
+}
+/* .select-seat-modal-container2{
+  width: 100vh;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); 
+  position: relative;
+  display: flex;
+  justify-content: end;
+} */
+.select-seat-modal{
+  width: 400px;
+  flex-shrink: 0;
+  background: rgba(253, 244, 222, 1);
+}
+.select-seat-modal3{
+  width: 400px;
+  flex-shrink: 0;
+  background: rgba(253, 244, 222, 1);
+}
+
+
+.select-seat-bus-details-area{
+  background: #FFF;
+  border-radius: 0px 0px 15px 15px;
+}
+.select-seat-title-area{
+  padding: 28px 20px 25px 25px;
+  border-bottom: 1px solid #E7E7E7;
+}
+.select-seat-title-area h3{
+  color: #333;
+  font-family: "Metropolis Medium";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 13px; /* 81.25% */
+}
+.select-seat-bus-details{
+  padding: 28px 20px 25px 25px;
+}
+.select-seat-bus-details .bus-image img{
+  margin-right: 9px;
+}
+.select-seat-bus-details-container{}
+.select-seat-bus-details-container h4{
+  color: #333;
+
+  /* Restaurant Title - (list View) */
+  font-family: "Metropolis Medium";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 17px; /* 121.429% */
+  margin-bottom: 2px;
+}
+.bus-description{
+  color: var(--Secondary-subtitles, #999);
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: "Metropolis Regular";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px; /* 125% */
+  margin-bottom: 2px;
+}
+.bus-description span:first-of-type{
+  border-radius: 4px;
+  background: var(--Rating-star-color, #EDB557);
+  margin-right: 3px;
+  color: #FFF;
+  font-family: "Metropolis Regular";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 8px; /* 72.727% */
+  padding: 4px;
+}
+.bus-description span:last-of-type{}
+.bus-description p{
+  color: #707070;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: "Metropolis Regular";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px; /* 125% */
+}
+.departure-arrival-container{
+  padding: 0px 20px 25px 25px;
+}
+.departure-arrival{
+  color: #AFAFAF;
+
+  /* Section Secondary Title */
+  font-family: "Metropolis Medium";
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 12px; /* 133.333% */
+  text-transform: uppercase;
+}
+.destination{
+  color: #333;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: "Metropolis Regular";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 123.077% */
+}
+.time{
+  color: #333;
+  font-feature-settings: 'clig' off, 'liga' off;
+
+  /* Secondary Title (Inside Card & ...) */
+  font-family: "Metropolis Medium";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px; /* 123.077% */
+}
+.warning{
+  color: #999;
+  font-family: "Metropolis Bold";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 15px; /* 150% */
+}
+.ticket-viewing{
+  padding: 15px 0;
+}
+.ticket-viewing span:first-of-type{
+  color: var(--Red, #EB5757);
+  font-family: "Metropolis Regular";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px; /* 100% */
+  margin-right: 5px;
+}
+.ticket-viewing span:last-of-type{
+  color: #333;
+  font-family: "Metropolis Regular";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px;
+}
+.select-seats-available-area{
+  background: #FFF;
+  border-radius: 15px 15px 0px 0px;
+}
+.ticket-availability-sign{
+  padding-top: 30px;
+  width: 327px; 
+  margin: 0 auto;
+}
+
+.ticket-availability-sign .available{
+  color: #707070;
+  font-family: "Metropolis Regular" ;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px; /* 125% */
+  margin-right: 0;
+}
+.ticket-availability-sign .available span:first-of-type{
+  width: 9px;
+  height: 9px; 
+  border-radius: 3px;
+  border: 0.5px solid #C8C8C8;
+  background: #FFF;
+  margin-right: 2px;
+}
+.ticket-availability-sign .sold{
+  color: #707070;
+  font-family: "Metropolis Regular" ;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px; /* 125% */
+}
+.ticket-availability-sign .sold span:first-of-type{
+  width: 9px;
+  height: 9px; 
+  border-radius: 3px;
+  background: #D7D7D7;
+  margin-right: 2px;
+}
+.ticket-availability-sign .selected{
+  color: #707070;
+  font-family: "Metropolis Regular" ;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px; /* 125% */
+}
+.ticket-availability-sign .selected span:first-of-type{
+  width: 9px;
+  height: 9px; 
+  border-radius: 3px;
+  background: #079D49;
+  margin-right: 2px;
+}
+.all-seats-main-container{
+  width: 327px; 
+  padding: 30px;
+  border-radius: 10px;
+  background: #F9F9F9;
+  margin: 0 auto;
+  margin-bottom: 13px;
+  position: relative;
+}
+.all-seats{
+  display: grid;
+  grid-template-columns: repeat(5, 48px);
+  gap: 8px;
+  align-content: end;
+}
+.all-seats div{
+  
+}
+.all-seats div .single-seat {
+  width: 48px;
+  height: 48px;
+  /* display: inline-block;
+  text-align: center;
+  flex-shrink: 0; */
+  border-radius: 10px;
+  border: 0.5px solid #C8C8C8;
+  background: #FFF;
+  color: #333;
+  cursor: pointer;
+  
+  /* line-height: 15px; 115.385% */ 
+  margin-bottom: 8px;
+  
+}
+.all-seats div .single-seat span{
+  font-family: "Metropolis Regular";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+}
+.all-seats div .not-visible{
+  visibility: hidden;
+}
+
+.all-seats div .booked{
+  background: #D7D7D7; 
+  border: none;
+  color: #9B9B9B; 
+}
+
+.all-seats div .selected{
+  border: none;
+  background: #079D49; 
+  color: #fff;
+}
+
+
+.choose-available-seat{
+  width: 344px; 
+  border-radius: 10px;
+  background: #333;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 16px;
+  position: absolute;
+  bottom: -75px;
+  left: -10px;
+
+}
+.close-choose-available:hover{
+  cursor: pointer;
+}
+.hide-choose-available-seat{
+  display: none;
+}
+.indicate-available-seat{
+  width: 12.296px;
+  height: 12.296px;
+  transform: rotate(45deg);
+  background-color: #333;
+  position: absolute;
+  top: -5px;
+  left: 60px;
+}
+.choose-available-seat-top{}
+.choose-available-seat-top svg{
+  cursor: pointer;
+}
+.choose-available-seat-top div h3{
+  color: #FFF;
+  font-family:"Metropolis Medium";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px; /* 138.462% */
+  margin-bottom: 0;
+}
+.choose-available-seat-top div p{
+  color: #C4C4C4;
+  font-family:"Metropolis Regular";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 145.455% */
+  margin-bottom: 13px;
+}
+.not-show-again{}
+.not-show-again input{
+  accent-color: #079D49;
+}
+.not-show-again label{
+  color: #FFF;
+  font-family: "Metropolis Medium";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+.modal-navigation-container{
+  border-radius: 10px 10px 0px 0px;
+  background: #FFF;
+  box-shadow: 0px -3px 10px 0px rgba(0, 0, 0, 0.07);
+}
+.modal-navigation{
+ 
+  padding: 18px;
+  padding-bottom: 0;
+}
+.modal-navigation div{
+  text-align: center;
+}
+.modal-navigation div svg{
+  margin-top: 17px;
+  margin-bottom: 11px;
+}
+.modal-navigation div h3{
+  color: #707070;
+  text-align: center;
+  font-family: "Metropolis Regular";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 10px; /* 90.909% */
+  text-transform: uppercase;
+  padding-bottom: 12px;
+}
+.selected-ticket{
+  border-radius: 10px 10px 0px 0px;
+  background: #079D49;
+  width: 100%;
+  padding: 23px 0 19px 18px;
+  cursor: pointer;
+}
+.selected-ticket div {
+  margin-left: 13px;
+}
+.selected-ticket div h3:first-of-type{
+  color: #FFF;
+  font-family: "Metropolis Regular";
+  font-size: 16.5px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 96.97% */
+  padding-bottom: 6px;
+}
+.selected-ticket div h3:last-of-type{
+  color: #FFF;
+  font-family: "Metropolis Regular";
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 76.19% */
+}
+.product__total-handler{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.product__handler-amount{
+  width: 100%;
+  margin: 0px 18px;
+  border-radius: 8px;
+  border: 1px solid #EBEDF5;
+  background: #FEFEFB;
+  /* padding: 7px 0; */
+  color: #595F84;
+  font-family: "Baloo Da 2";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+  /* height: 39px;  */
+
+}
+
+/* modal 2 */
+.select-seat-modal-container2{
+  /* width: 100vh; */
+  /* height: 100vh;
+  background: rgba(0, 0, 0, 0.3); 
+  position: absolute;*/
+  display: flex;
+  justify-content: end;
+  /* top: 0; */
+   
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: black;
+  position: fixed;
+  right: -10000000000000px;
+  height: 100vh;
+  width: 100%;
+  /* display: flex; */
+  /* flex-direction: column; */
+  gap: 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  overflow-y: scroll;
+  transition: 0.3s;
+  z-index: 999;
+}
+
+.select-seat-modal2{
+  width: 400px;
+  /* height: 100vh; */
+
+  background: #fff;
+}
+
+.select-seat-modal2 .select-seat-title-area h3{
+  margin-left: 16px;
+  margin-bottom: 0;
+}
+
+.selected-ticket-boarding{
+    position: fixed;
+    bottom: 0;
+}
+
+.boarding-point-container{
+  margin-top: 10px;
+  padding-bottom: 200px;
+  background: #fff;
+}
+.boarding-point-item{
+  padding: 20px 20px 16px 25px;
+  border-bottom: 1px solid #ECECEC;
+  background: #fff;
+
+}
+.boarding-point-left-side input{
+  /* position: static !important; */
+  accent-color: #079D49;
+  cursor: pointer;
+}
+.boarding-point-left-side input:checked + div h3{
+  color: #079D49;
+}
+.boarding-point-description-container{
+  margin-left: 16px;
+}
+
+.boarding-point-title{
+  color: #333;
+  font-family: "Metropolis Regular";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px; /* 138.462% */
+  margin-bottom: 10px;
+}
+.boarding-point-description{
+  color: #707070;
+  font-family: "Metropolis Regular";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px; /* 125% */
+  width: 268px; 
+  margin-bottom: 0;
+}
+.boarding-point-direction-landmarks{
+  margin-left: 0 !important;
+}
+.boarding-point-direction-landmarks div{
+  border-radius: 10px;
+  border: 0.5px solid #C8C8C8;
+  background: #FFF;
+  padding: 10px 16px;
+}
+
+.boarding-point-direction-landmarks div span{
+  color: #707070;
+  text-align: right;
+  font-family: "Metropolis Medium";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 145.455% */
+  text-transform: uppercase;
+  margin: 0 5px;
+  display: inline-block;
+}
+.boarding-point-direction-landmarks div:first-of-type{
+  margin-right: 8px;
+}
+.boarding-point-right-side span{
+  color: var(--Black, #070606);
+  text-align: right;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: "Metropolis Regular";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 15px; /* 125% */
+}
+.selecting-board-btn{
+  border-radius: 10px;
+  background: #0A9446;
+  margin-left: 72px;
+  padding: 15px 28px;
+  color: #FFF;
+  text-align: right;
+  font-family: "Metropolis Bold";
+  font-size: 16.5px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 96.97% */
+  text-transform: uppercase;
+  border: none;
+}
+
+.selecting-board-btn svg{
+  margin-left: 7px;
+}
+
+
+
+
+/* Select Seat Modal Login */
+.select-seat-modal-login{
+    /* width: 100vh; */
+  /* height: 100vh;
+  background: rgba(0, 0, 0, 0.3); 
+  position: absolute;*/
+  display: flex;
+  justify-content: end;
+  /* top: 0; */
+   
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: black;
+  position: fixed;
+  right: -10000000000000px;
+  height: 100vh;
+  width: 100%;
+  /* display: flex; */
+  /* flex-direction: column; */
+  gap: 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  overflow-y: scroll;
+  transition: 0.3s;
+  z-index: 999;
+}
+
+
+
+.select-seeat-modal-login-container{
+  width: 400px;
+  /* height: 100vh; */
+  /* padding: 38px;
+  background: #fff; */
+
+  background: #fff;
+}
+.select-seeat-modal-login-container  form{  
+  width: 100%;
+  padding: 38px;
+  background: #fff;
+
+
+}
+.login-top-part{
+  margin-top: 70px;
+  background: #fff;
+
+}
+.login-title{
+  color: var(--Black, #191C23);
+  font-family: "Metropolis Bold";
+  margin-bottom: 11px;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.login-description{
+  color: #999;
+  font-family: "Metropolis Regular";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 200% */
+  margin-bottom: 58px;
+}
+.login-phone,
+.login-password{
+  width: 100%;
+  border-radius: 10px;
+  border: 0.5px solid rgba(0, 0, 0, 0.10);
+  background: #F2F6FA;
+  color: rgba(0, 0, 0, 0.50);
+  font-family: "Metropolis Regular";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19.5px; /* 150% */
+  padding: 13px 14px;
+}
+.login-phone{
+  margin-bottom: 27px;
+}
+.login-password{
+  margin-bottom: 34px;
+}
+.forgot-password div input{
+  accent-color: rgba(7, 157, 73, 1);
+  margin-right: 4px;
+}
+.forgot-password div span{
+  color: var(--Black, #191C23);
+  font-family:"Metropolis Regular";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.forgot-password a{
+  color: #1064D4;
+  font-family: "Metropolis Regular";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.login-btn{
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #079D49;
+  background: #079D49;
+  color: #FFF;
+  text-align: center;
+  font-family: "Metropolis Bold";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 145.455% */
+  text-transform: uppercase;
+  padding: 12px 0;
+  border: none;
+  margin-bottom: 12px;
+
+}
+.login-bottom-part{
+  /* position: absolute; */
+  background: #fff;
+
+  /* bottom: 0; */
+  padding-top: 300px;
+}
+.login-bottom-part div{
+  width: 374px; 
+  margin: 0 auto;
+  background: #fff;
+
+  margin-bottom: 60px;
+}
+.login-bottom-part div h4{
+  width: 165px; 
+  color: #333;
+  font-family: "Metropolis Regular";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+}
+.login-bottom-part div a{
+  color: #079D49;
+  font-family: Metropolis;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+  text-decoration-line: underline;
+}
+
+.login-bottom-part p{
+  color: #8692A6;
+  text-align: center;
+  font-family: "Inter";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.login-bottom-part svg{
+  margin-right: 8px;
+}
+
+/* Double Decker */
+.lower-deck-upper-deck{
+  padding: 2px;
+  border-radius: 10px;
+  background: #F1F4F3;
+  width: 328px; 
+  margin: 14px auto;
+
+}
+
+.lower-deck-upper-deck button:first-of-type{
+  width: 100%;
+  border-radius: 8px;
+  background: #FFF;
+  border: none;
+  padding: 10px;
+  color: #079D49;
+  text-align: center;
+  font-family: "Metropolis Bold";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 15px; /* 125% */
+}
+.lower-deck-upper-deck button:last-of-type{
+  width: 100%;
+
+  border-radius: 8px;
+  background: transparent;
+  border: none;
+  padding: 10px;
+  color: #707070;
+  text-align: center;
+  font-family: "Metropolis Regular";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 15px; /* 125% */
+}
+
+/* Trip Info Modal */
+.trip-info-modal{
+    /* width: 100vh; */
+  /* height: 100vh;
+  background: rgba(0, 0, 0, 0.3); 
+  position: absolute;*/
+  display: flex;
+  justify-content: end;
+  /* top: 0; */
+   
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: black;
+  position: fixed;
+  right: -10000000000000px;
+  height: 100vh;
+  width: 100%;
+  /* display: flex; */
+  /* flex-direction: column; */
+  gap: 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  overflow-y: scroll;
+  transition: 0.3s;
+  z-index: 999;
+}
+.trip-info-modal-container{
+  width: 400px;
+  /* height: 100vh; */
+  /* padding: 38px; */
+  background: #F4F4F4;
+}
+.trip-info-container{
+  background-color: #F4F4F4;;
+}
+.trip-info-top-part{
+  background: #FFF;
+  border-radius: 0px 0px 15px 15px;
+}
+.trip-info-title-area{
+  padding: 28px 22px 22px 25px;
+  border-bottom: 1px solid #E7E7E7;
+}
+.trip-info-title-area div{}
+.trip-info-title-area div svg{
+  margin-right: 12px;
+}
+.trip-info-title-area div h3{
+  color: #333;
+  font-family: "Metropolis Bold";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 13px; /* 81.25% */
+}
+.trip-info-navigation{
+  padding: 17px 22px 0px 25px;
+  border-bottom: 1px solid #E7E7E7;
+  
+}
+.trip-info-navigation-item{
+  text-align: center;
+  cursor: pointer;
+}
+
+.trip-info-navigation-item svg{}
+.trip-info-navigation-item h3{
+  color: #707070;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 10px; /* 83.333% */
+  padding: 11px 0 0px 0;
+  margin-bottom: 0;
+}
+.trip-info-navigation-item span{
+  width: 32px;
+  border-radius: 3px;
+  display: inline-block;
+  height: 3px;
+  flex-shrink: 0;;
+}
+
+.trip-info-navigation-item:hover h3{
+  color: #079D49;
+}
+.trip-info-navigation-item:hover span{
+  background: #079D49; 
+}
+
+.trip-info-user-rating{
+  padding: 32px 22px 28px 25px;
+  border-bottom: 1px solid #E7E7E7;
+}
+.trip-info-user-rating-title{
+  color: #333;
+font-feature-settings: 'clig' off, 'liga' off;
+
+/* Section Header Bold */
+font-family: "Metropolis Regular";
+font-size: 15px;
+font-style: normal;
+font-weight: 700;
+line-height: 18px; /* 120% */
+margin-bottom: 23px;
+}
+.user-rating-container-left-side{}
+.user-rating-container-left-side h2{
+  color: var(--title-default-black, #333);
+  font-family: "Metropolis Regular";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 62.5% */
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+.user-rating-container-left-side svg{
+  margin-bottom: 7px;
+}
+.user-rating-container-left-side span{}
+.user-rating-container-right-side{}
+.user-rating-image-item{}
+.user-rating-image-item .image-container{
+  width: 41px;
+  height: 41px;
+  flex-shrink: 0;
+  padding: 7px;
+  border-radius: 50%;
+
+}
+.user-rating-image-item:nth-child(1) .image-container{
+  background-color: #F8BDC5;
+}
+.user-rating-image-item:nth-child(2) .image-container{
+  background-color: #FCB085;
+}
+.user-rating-image-item:nth-child(3) .image-container{
+  background-color: #86B5D0;
+}
+.user-rating-image-item .image-container svg{}
+
+.user-rating-image-item h4{
+  color: var(--Secondary-subtitles, #999);
+  font-family: "Roboto";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 11px; /* 110% */
+  text-transform: capitalize;
+}
+.amenities{
+  padding: 27px 22px 40px 25px;
+  border-bottom: 1px solid #E7E7E7;
+}
+.amenities-title{
+  color: #333;
+  font-feature-settings: 'clig' off, 'liga' off;
+
+  /* Section Header Bold */
+  font-family: "Metropolis Bold";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px; /* 120% */
+  margin-bottom: 29px;
+}
+.amenities-items-container{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: "40px"
+}
+.amenities-item{
+  text-align: center;
+}
+.amenities-item svg{
+  margin-bottom: 4px;
+}
+.amenities-item h4{
+  color: #707070;
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: "Roboto";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 13px; /* 130% */
+}
+.trip-info-photos{
+  padding: 24px 22px 24px 25px;
+  border-bottom: 1px solid #E7E7E7;
+}
+.photos-title-area{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.photos-title-area h3{
+  color: #333;
+  font-feature-settings: 'clig' off, 'liga' off;
+
+  /* Section Header Bold */
+  font-family: "Metropolis Bold";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px; /* 120% */
+  margin-bottom: 13px;
+}
+.photos-title-area span{
+  color: #333;
+  text-align: right;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: "Roboto";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 13px; /* 130% */
+}
+.photos-title-area span svg{
+  margin-right: 5px;
+}
+.photos-items-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+.photos-item{
+  position: relative;
+}
+.photos-item img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.photos-item .view-all{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000063;
+  border-radius: 10px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trip-details{
+  padding: 23px 22px 18px 25px;
+}
+.trip-details-title{
+  color: #333;
+  font-feature-settings: 'clig' off, 'liga' off;
+
+  /* Section Header Bold */
+  font-family: "Metropolis Bold";
+  margin-bottom: 16px;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px; /* 120% */
+}
+.boarding-dropping-container{
+  border-radius: 10px;
+  background: #F1F4F3; 
+  padding: 2px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2px;
+}
+.boarding-dropping-container button:first-of-type{
+  padding: 10px 0;
+  width: 100%;
+  color: var(--Shohoz-Green, #079D49);
+  text-align: center;
+  font-family: "Metropolis Medium";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 15px; /* 125% */
+  border: none;
+  outline: none;
+  border-radius: 8px;
+background: #FFF; 
+}
+.boarding-dropping-container button:last-of-type{
+  border: none;
+  outline: none;
+  padding: 10px 0;
+  width: 100%;
+  color: var(--Shohoz-Green, #079D49);
+  text-align: center;
+  font-family: "Metropolis Medium";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 15px; /* 125% */
+}
+.trip-details-timeline{}
+.trip-details-timeline-title{
+  color: var(--Orange, #F2994A);
+
+  /* Ind. Category Title */
+  font-family: "Roboto";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 13px; /* 130% */
+}
+.trip-details-timeline-item{
+  display: flex;
+}
+.trip-details-timeline-item h4{
+  color: var(--Shohoz-Green, #079D49);
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: "Metropolis Bold";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px; /* 133.333% */
+  margin-right: 25px;
+}
+.trip-details-timeline-item div{
+  padding-left: 19px;
+  border-left: 1px solid rgba(196, 196, 196, 1);
+  position: relative;
+}
+.trip-details-timeline-item:last-of-type div{
+  border-left: none;
+}
+.trip-details-timeline-item div::after{
+  content: "";
+  width: 10px;
+  height: 10px;
+  border: 2px solid rgba(196, 196, 196, 1);
+  /* background-color: "red"; */
+  display: inline-block;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: -5px;
+}
+.trip-details-timeline-item div h3{
+  color: #333;
+  font-family: "Metropolis";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 17px; /* 130.769% */
+  margin-bottom: 0;
+}
+.trip-details-timeline-item div p{
+  color: #707070;
+  font-family: "Metropolis Regular";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 180% */
+  padding-bottom: 19px;
+}
+
+.testimonial-by-customers{
+  padding: 38px 22px 38px 25px;
+  background: #F4F4F4;
+  /* margin-top: -20px; */
+}
+
+.testimonial-by-customers-title{
+  color: #707070;
+
+  /* Section Primary Title */
+  font-family: "Metropolis Bold";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 13px; /* 130% */
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.testimonial-by-customers-area{
+  padding: 16px;
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.04);
+}
+
+.testimonial-image-container{
+  margin-right: 8px;
+}
+
+.testimonial-image-container img:last-child{
+  margin-left: -20px;
+}
+
+.testimonial-by-customers-title{
+  color: #333;
+  font-feature-settings: 'clig' off, 'liga' off;
+
+  /* Secondary Title (Inside Card & ...) */
+  font-family: "Metropolis Bold";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px; /* 123.077% */
+  margin-bottom: 10px;
+}
+
+.testimonial-by-customers-description{
+  color: #707070;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: "Roboto";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px; /* 150% */
+  margin-bottom: 0;
+}
+
+.testimonial-review{
+  color: #333;
+  font-family: "Roboto";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px; /* 116.667% */
+  margin-top: 11px;
+  margin-bottom: 0;
+}
+
+.trip-info-bottom-part{
+  padding: 30px 40px;
+  background: #fff;
+  border-radius: 15px 15px;
+}
+
+.policies{
+  margin-bottom: 42px;
+}
+
+.policies-title{
+  color: #333;
+  font-feature-settings: 'clig' off, 'liga' off;
+
+  /* Section Header Bold */
+  font-family: "Metropolis Bold";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px; /* 120% */
+  margin-bottom: 10px;
+}
+.cancellations-policy{
+  color: var(--Orange, #F2994A);
+  font-feature-settings: 'clig' off, 'liga' off;
+
+  /* Secondary Title (Inside Card & ...) */
+  font-family: "Metropolis Medium";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px; /* 123.077% */
+  margin-bottom: 10px;
+
+}
+.policies ul{
+  list-style: circle;
+  padding-left: 12px;
+}
+.policies ul li{
+  color: #707070;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: "Roboto";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 166.667% */
+}
+.down-arow{
+  width: 33px;
+  height: 33px;
+  flex-shrink: 0;
+  background-color: #079D49;
+  /* text-align: center; */
+  justify-content: center;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  border-radius: 50%;
+}
+.terms-and-conditions-title{
+  color: var(--Orange, #F2994A);
+  font-feature-settings: 'clig' off, 'liga' off;
+
+  /* Secondary Title (Inside Card & ...) */
+  font-family: "Metropolis Medium";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px; /* 123.077% */
+  margin-bottom: 10px;
+}
+.terms-and-conditions ul{
+  list-style: circle;
+  padding-left: 12px;
+}
+.terms-and-conditions ul li{
+  color: #707070;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: "Roboto";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 166.667% */
+}
+
+.trip-info-close:hover{
+  cursor: pointer;
+}
+.booking-time-up-modal-container{
+    /* width: 100vh; */
+  /* height: 100vh;
+  background: rgba(0, 0, 0, 0.3); 
+  position: absolute;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* top: 0; */
+   
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: black;
+  position: fixed;
+  right: -10000000000000px;
+  height: 100vh;
+  width: 100%;
+  /* display: flex; */
+  /* flex-direction: column; */
+  gap: 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  overflow-y: scroll;
+  transition: 0.3s;
+  z-index: 999;
+}
+.booking-time-up-modal{
+  width: 312px;
+  height: 202px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.20);
+  padding: 26px 16px 16px 16px;
+}
+.booking-time-up-modal h3{
+  color: #333;
+  text-align: center;
+  font-family: "Metropolis Bold";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px; /* 122.222% */
+}
+.booking-time-up-modal p{
+  color: #707070;
+  text-align: center;
+  font-family: "Metropolis Regular";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px; /* 125% */
+  margin-bottom: 25px;
+}
+.booking-time-up-modal div{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+.booking-time-up-modal button:first-child{
+  border-radius: 10px;
+  border: 0.5px solid #C8C8C8;
+  background: #FFF;
+  padding: 15px 0;
+  color: #707070;
+  text-align: center;
+  font-family: "Metropolis Bold";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px; /* 163.636% */
+}
+.booking-time-up-modal button:last-of-type{
+  border-radius: 10px;
+  background: var(--shohoz-green, #079D49);
+  padding: 15px 0;
+  border: transparent;
+  color: #FFF;
+  text-align: center;
+  font-family: "Metropolis Bold";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 145.455% */
+
+}
+.booking-time-up-modal button:last-of-type a{
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  background: var(--shohoz-green, #079D49);
+  padding: 15px 0;
+  border: transparent;
+  color: #FFF;
+  text-align: center;
+  font-family: "Metropolis Bold";
+  outline: none;
+  background-color: #079D49;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 145.455% */
+}
+/* .trip-info-navigation-item:hover svg  */
+
+
+/* Your Ticket Modal */
+
+
+.your-ticket-modal{
+  /* width: 100vh; */
+    /* height: 100vh;
+    background: rgba(0, 0, 0, 0.3); 
+    position: absolute;*/
+    display: flex;
+    justify-content: end;
+    /* top: 0; */
+     
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: black;
+    position: fixed;
+    right: -10000000000000px;
+    height: 100vh;
+    width: 100%;
+    /* display: flex; */
+    /* flex-direction: column; */
+    gap: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    overflow-y: scroll;
+    transition: 0.3s;
+    z-index: 999;
+  }
+  .your-ticket-modal-container{
+    width: 400px;
+    /* height: 100vh; */
+    background: #fff;
+  }
+
+  .your-ticket-modal-overlay-container{
+    background-color: #fff;
+  }
+
+  .ticket-modal-title-area{
+    padding: 20px 19px 11px 24px;
+    border-bottom: 1px solid #E7E7E7;
+  }
+
+  .ticket-modal-title-area h3{
+    color: #333;
+  font-family: "Metropolis Bold";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 13px; /* 81.25% */
+  }
+
+  .ticket-modal-title-area-navigation svg{
+    margin-right: 12px;
+  }
+
+  .ticket-modal-title-area-navigation svg:last-child{
+    margin-right: 0;
+  }
+
+  .ticket-details-container{
+    padding: 20px 19px 11px 24px;
+  }
+
+  .ticket-pdf-email{
+    color: #707070;
+  font-family: "Roboto";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px; /* 116.667% */
+  }
+  .ticket-pdf-email span{
+    color: var(--Orange, #F2994A);
+    font-family: "Roboto";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 14px;
+  }
+
+  .ticket-details-main-container{
+    margin-top: 24px;
+    padding: 24px 16px;
+    background-color: #EFF9F3;
+    border-radius: 15px;
+  }
+
+  .ticket-details-logo span{
+    color: var(--Shohoz-Green, #079D49);
+    text-align: right;
+    font-family: "Metropolis Bold";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px; /* 150% */
+    
+  }
+  .ticket-details-logo{
+    margin-bottom: 23px;
+  }
+  .tickt-departure-arrival span{
+    color: var(--Orange, #F2994A);
+    font-family: "Metropolis Regular";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.24px;
+    text-transform: uppercase;
+  }
+
+  .ticket-destination span{
+    color: var(--surface, #1D2026);
+  font-feature-settings: 'clig' off, 'liga' off;
+
+  /* Secondary Title (Inside Card & ...) */
+  font-family: "Metropolis Medium";
+  font-size: 13px;  
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px; /* 123.077% */
+  }
+
+  .ticket-time p{
+    color: var(--surface, #1D2026);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Metropolis Regular";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px; /* 125% */
+    margin-bottom: 16px;
+    border-bottom: 1px solid #E7E7E7;
+  }
+  .ticket-time p:last-child{
+    text-align: right;
+  }
+  .ticket-bus{
+    margin-top: 15px;
+    margin-bottom: 18px;
+    border-bottom: 1px solid #E7E7E7;
+
+  }
+  .ticket-bus div img{
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    margin-right: 8px;
+  }
+  .ticket-bus div .bus-information h3{
+    color: var(--surface, #1D2026);
+    font-feature-settings: 'clig' off, 'liga' off;
+    
+    /* Secondary Title (Inside Card & ...) */
+    font-family: "Metropolis Medium";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px; /* 123.077% */
+    margin-bottom: 0;
+  }
+  .ticket-bus div .bus-information p{
+    color: #717778;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: "Metropolis Regular";
+  font-size: 12px;
+  font-style: normal; 
+  font-weight: 400;
+  line-height: 15px; /* 125% */
+  }
+  .ticket-bus .bus-seat-information h3{
+    color: var(--Orange, #F2994A);
+    font-family: "Metropolis Regular";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.24px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    text-align: right;
+  }
+  .ticket-bus .bus-seat-information h4{
+    color: var(--surface, #1D2026);
+    text-align: right;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Secondary Title (Inside Card & ...) */
+    font-family:"Metropolis Medium";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px; /* 123.077% */
+  }
+  .ticket-bus-person{
+    margin-bottom: 31px;
+  }
+
+  .ticket-bus-person div span:first-child{
+    color: var(--Orange, #F2994A);
+    font-family: "Metropolis Regular";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.24px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+  .ticket-bus-person div:last-child span:first-child{
+    text-align: right;
+  }
+
+  .ticket-bus-person div span:last-child{
+    color: var(--surface, #1D2026);
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Secondary Title (Inside Card & ...) */
+    font-family: "Metropolis Medium";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px; /* 123.077% */
+  }
+
+  .ticket-divider span{
+    width: 100%;
+    height: 1px;
+    background-color: #E7E7E7;
+  }
+  .ticket-divider{
+    position: relative;
+    margin-bottom: 38px;
+  } 
+  .ticket-divider div:first-child{
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+    background-color: #fff;
+    position: absolute;
+    top: -13px;
+    left: -26px;
+    border-radius: 50%;
+  }
+  .ticket-divider div:last-child{
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+    background-color: #fff;
+    position: absolute;
+    top: -13px;
+    right: -26px;
+    border-radius: 50%;
+  }
+
+
+  .ticket-qr-code div h3{
+    color: #F2994A;
+    font-family: "Metropolis Regular";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.24px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+  .ticket-qr-code div h4{
+    color: var(--surface, #1D2026);
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Secondary Title (Inside Card & ...) */
+    font-family: "Metropolis Medium";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px; /* 123.077% */
+  }
+
+  .proceed-to-payment-success{
+    margin-top: 100px;
+    border-radius: 10px 10px 0px 0px;
+    background: #FFF;
+    box-shadow: 0px -3px 9px 0px rgba(0, 0, 0, 0.10);
+    padding: 16px;
+  }
+
+  .proceed-to-payment-success button{
+    padding: 18px 0;
+    width: 100%;
+    border-radius: 10px;
+    background: #079D49;
+    color: #FFF;
+    text-align: center;
+    font-family: "Metropolis Medium";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px; /* 114.286% */
+    text-transform: uppercase;
+    border: none;
+  }
+
+
+  
+/* Payment Failed */
+
+
+.payment-failed-modal{
+  /* width: 100vh; */
+    /* height: 100vh;
+    background: rgba(0, 0, 0, 0.3); 
+    position: absolute;*/
+    display: flex;
+    justify-content: end;
+    /* top: 0; */
+     
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: black;
+    position: fixed;
+    right: -10000000000000px;
+    height: 100vh;
+    width: 100%;
+    /* display: flex; */
+    /* flex-direction: column; */
+    gap: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    overflow-y: scroll;
+    transition: 0.3s;
+    z-index: 999;
+  }
+  .payment-failed-container{
+    width: 400px;
+    /* height: 100vh; */
+    background: #fff;
+  }
+
+  .payment-failed-modal-overlay-container{
+    background-color: #fff;
+  }
+
+  .payment-failed-title-area{
+    padding: 20px 19px 11px 24px;
+    border-bottom: 1px solid #E7E7E7;
+  }
+
+  .payment-failed-title-area h3{
+    color: #333;
+  font-family: "Metropolis Bold";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 13px; /* 81.25% */
+  }
+  .payment-failed-error{
+    margin: 20px 19px 11px 24px;
+
+    padding: 23px;
+    text-align: center;
+    border-radius: 10px;
+      background: #FFE3E4;
+  }
+  .payment-failed-error div{
+    width: 39px;
+    height: 39px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: var(--Linear, linear-gradient(270deg, #FF7C7C 0%, rgba(255, 153, 153, 1.00) 99.96%, rgba(255, 153, 153, 0.99) 99.97%, rgba(252, 145, 145, 0.69) 99.98%, rgba(248, 131, 131, 0.18) 99.99%, rgba(246, 126, 126, 0.00) 100%));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+  .payment-failed-error h3{
+    color: var(--Red, #EB5757);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Section Header Bold */
+    font-family: "Metropolis Medium";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px; /* 120% */
+    margin-bottom: 10px;
+  }
+  .payment-failed-error p{
+    width: 269px; 
+    color: #8F7172;
+text-align: center;
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: "Metropolis Regular";
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 15px; /* 125% */
+margin: 0 auto;
+  }
+  
+  .departure-journey-details-error{
+    margin: 20px 19px 11px 24px;
+    padding: 16px;
+    border-radius: 10px;
+background: #F3F3F3;
+  }
+
+  .departure-journey-details-error h3{
+    color: #AFAFAF;
+    font-family: "Metropolis Medium";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+  }
+  .departure-journey-details-error div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 13px;
+  }
+  .departure-journey-details-error div span:first-child{
+    color: #707070;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Metropolis Regular";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px; /* 125% */
+  }
+  .departure-journey-details-error div span:last-child{
+    color: #333;
+    font-family: "Metropolis Medium";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .error-time-left{
+    padding: 5px 8px;
+    border-radius: 24px;
+    background: #4FA987;
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Metropolis Medium";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px; /* 150% */
+  }
+  .error-time-left svg{
+    margin-right: 8px;
+  }
+  .error-time-left-container{
+    text-align: center;
+    margin-top: 100px;
+  }
+  .try-again{
+    margin-top: 50px;
+  }
+
+/* Modal show Hide*/
+.show{
+  right:0;
+}
+
+.selected-ticket-disable{
+  opacity: 0.6;
+  cursor: default;
+}

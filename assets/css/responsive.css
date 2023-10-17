@@ -1,0 +1,57 @@
+/* // Small devices (landscape phones, 768px) */
+@media only screen and (max-width: 768px) {
+  .mini-nav .container ul li a {
+    margin-left: 0;
+    margin-right: 30px;
+  }
+  .banner-search-container {
+    padding: 0;
+    position: static;
+  }
+
+  .direction {
+    transform: rotate(88deg);
+  }
+
+  .banner-search {
+    margin-top: 0;
+    position: static;
+    padding: 10px;
+  }
+  .search-item-from {
+    /* padding: 0; */
+    margin: 0;
+  }
+  .introducing {
+    background: #f6f9f9;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .questions-left-side {
+    padding-right: 10px;
+  }
+  .questions-left-side button {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 992px) { 
+  .mini-nav .container ul li a {
+      margin-left: 0;
+      margin-right: 30px;
+    }
+    .direction{
+      transform: rotate(88deg);
+  }
+    .search-item-from,
+    .btn-search{
+      width: 100%;
+      margin: 5px 0;
+    }
+    .payment-item{
+      width: 100%;
+    }
+    .bus-price {
+      margin-right: 0;
+    }
+}

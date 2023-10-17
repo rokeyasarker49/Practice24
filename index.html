@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sohoz Bus</title>
+    <!-- Bootstrap CDN Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Work+Sans:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Responsive.css -->
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    
+    
+  </head>
+
+  <body>
+    <div class="dropdown-container">
+        <button
+          class="btn d-flex align-items-center btn-outline-secondary dropdown-toggle"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <img src="./assets/img/profile-image.png" />
+          <h5>Mohabbat</h5>
+        </button>
+        <div class="dropdown">
+          <ul class="dropdown-menu">
+            <li>
+              <div class="bus-logo-container d-flex justify-content-between">
+                  <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16.6668 18.793H15.0002V17.1263C15.0002 15.7456 13.8809 14.6263 12.5002 14.6263H7.50016C6.11945 14.6263 5.00016 15.7456 5.00016 17.1263V18.793H3.3335V17.1263C3.3335 14.8251 5.19898 12.9596 7.50016 12.9596H12.5002C14.8013 12.9596 16.6668 14.8251 16.6668 17.1263V18.793ZM10.0002 11.293C7.23874 11.293 5.00016 9.05439 5.00016 6.29297C5.00016 3.53154 7.23874 1.29297 10.0002 1.29297C12.7616 1.29297 15.0002 3.53154 15.0002 6.29297C15.0002 9.05439 12.7616 11.293 10.0002 11.293ZM10.0002 9.6263C11.8411 9.6263 13.3335 8.13392 13.3335 6.29297C13.3335 4.45202 11.8411 2.95964 10.0002 2.95964C8.15921 2.95964 6.66683 4.45202 6.66683 6.29297C6.66683 8.13392 8.15921 9.6263 10.0002 9.6263Z" fill="#333333"/>
+                      </svg>
+                      
+             
+                  <a class="bus-title dropdown-item" href="#">My Profile</a>
+              </div>
+            </li>
+            <li>
+              <div class="bus-logo-container d-flex">
+                  <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.33333 2.12891H16.6667C17.1269 2.12891 17.5 2.50201 17.5 2.96224V19.0258C17.5 19.256 17.3134 19.4426 17.0833 19.4426C17.0248 19.4426 16.967 19.4302 16.9136 19.4063L10 16.3217L3.08644 19.4063C2.87629 19.5002 2.62993 19.4057 2.53616 19.1957C2.51232 19.1422 2.5 19.0843 2.5 19.0258V2.96224C2.5 2.50201 2.8731 2.12891 3.33333 2.12891ZM15.8333 17.0993V3.79557H4.16667V17.0993L10 14.4966L15.8333 17.0993ZM10 11.7122L7.55089 12.9998L8.01863 10.2727L6.03727 8.34134L8.77542 7.94346L10 5.46224L11.2246 7.94346L13.9628 8.34134L11.9813 10.2727L12.4491 12.9998L10 11.7122Z" fill="#333333"/>
+                      </svg>
+                      
+             
+                  <a class="bus-title dropdown-item" href="#">My Bookings</a>
+              </div>
+            </li>
+            <li>
+              <div class="bus-logo-container d-flex">
+                  <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.6665 18.793C1.6665 15.1111 4.65127 12.1263 8.33317 12.1263C12.0151 12.1263 14.9998 15.1111 14.9998 18.793H13.3332C13.3332 16.0316 11.0946 13.793 8.33317 13.793C5.57175 13.793 3.33317 16.0316 3.33317 18.793H1.6665ZM8.33317 11.293C5.57067 11.293 3.33317 9.05547 3.33317 6.29297C3.33317 3.53047 5.57067 1.29297 8.33317 1.29297C11.0957 1.29297 13.3332 3.53047 13.3332 6.29297C13.3332 9.05547 11.0957 11.293 8.33317 11.293ZM8.33317 9.6263C10.1748 9.6263 11.6665 8.13464 11.6665 6.29297C11.6665 4.4513 10.1748 2.95964 8.33317 2.95964C6.4915 2.95964 4.99984 4.4513 4.99984 6.29297C4.99984 8.13464 6.4915 9.6263 8.33317 9.6263ZM15.2363 12.712C17.5535 13.7564 19.1665 16.0863 19.1665 18.793H17.4998C17.4998 16.763 16.2901 15.0156 14.5522 14.2322L15.2363 12.712ZM14.6633 3.30398C16.3285 3.99049 17.4998 5.62931 17.4998 7.54297C17.4998 9.9348 15.67 11.8973 13.3332 12.1076V10.4301C14.7471 10.2281 15.8332 9.01297 15.8332 7.54297C15.8332 6.39243 15.1678 5.39799 14.2007 4.92326L14.6633 3.30398Z" fill="#333333"/>
+                      </svg>
+                      
+             
+                  <a class="bus-title dropdown-item" href="#">My Family and Friends</a>
+              </div>
+            </li>
+            <br>
+            <hr>
+            <br>
+            <li>
+              <div class="bus-logo-container d-flex">
+                  
+             
+                  <a class="bus-title dropdown-item" href="#">Logout</a>
+              </div>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+
+
+
+     <!-- Bootstrap JS CDN Link -->
+     <script
+     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+     crossorigin="anonymous"
+   ></script>
+  </body>
+
+</html>
